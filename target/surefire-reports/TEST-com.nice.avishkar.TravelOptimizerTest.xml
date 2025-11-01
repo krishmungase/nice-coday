@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.nice.avishkar.TravelOptimizerTest" time="0.212" tests="7" errors="0" skipped="1" failures="6">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.nice.avishkar.TravelOptimizerTest" time="0.534" tests="7" errors="6" skipped="1" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/krishna/Desktop/MyTeam_Java/target/test-classes:/Users/krishna/Desktop/MyTeam_Java/target/classes:/Users/krishna/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/krishna/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/krishna/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar:"/>
+    <property name="java.class.path" value="/Users/krishna/Desktop/nice-coday/target/test-classes:/Users/krishna/Desktop/nice-coday/target/classes:/Users/krishna/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/krishna/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/krishna/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar:"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
@@ -12,10 +12,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/krishna/Desktop/MyTeam_Java/target/surefire/surefirebooter6474319127603776860.jar /Users/krishna/Desktop/MyTeam_Java/target/surefire 2025-11-01T11-04-08_026-jvmRun1 surefire5003433672897928894tmp surefire_05460933702133783873tmp"/>
+    <property name="sun.java.command" value="/Users/krishna/Desktop/nice-coday/target/surefire/surefirebooter5161287221564666393.jar /Users/krishna/Desktop/nice-coday/target/surefire 2025-11-01T13-07-13_863-jvmRun1 surefire5158079098826211801tmp surefire_015855591469829805009tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/krishna/Desktop/MyTeam_Java/target/test-classes:/Users/krishna/Desktop/MyTeam_Java/target/classes:/Users/krishna/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/krishna/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/krishna/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/krishna/Desktop/nice-coday/target/test-classes:/Users/krishna/Desktop/nice-coday/target/classes:/Users/krishna/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/krishna/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/krishna/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/krishna"/>
     <property name="user.language" value="en"/>
@@ -23,13 +23,13 @@
     <property name="java.version.date" value="2025-01-21"/>
     <property name="java.home" value="/usr/local/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/krishna/Desktop/MyTeam_Java"/>
+    <property name="basedir" value="/Users/krishna/Desktop/nice-coday"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/krishna/Desktop/MyTeam_Java/target/surefire/surefirebooter6474319127603776860.jar"/>
+    <property name="surefire.real.class.path" value="/Users/krishna/Desktop/nice-coday/target/surefire/surefirebooter5161287221564666393.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="java.io.tmpdir" value="/var/folders/g9/q8r3vcws4nq16mtrmc7fy0wm0000gn/T/"/>
     <property name="java.version" value="23.0.2"/>
-    <property name="user.dir" value="/Users/krishna/Desktop/MyTeam_Java"/>
+    <property name="user.dir" value="/Users/krishna/Desktop/nice-coday"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -61,34 +61,34 @@
   <testcase name="testWithSummary" classname="com.nice.avishkar.TravelOptimizerTest" time="0">
     <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
   </testcase>
-  <testcase name="test1" classname="com.nice.avishkar.TravelOptimizerTest" time="0.001">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at com.nice.avishkar.TravelOptimizerTest.test1(TravelOptimizerTest.java:36)
-</failure>
+  <testcase name="test1" classname="com.nice.avishkar.TravelOptimizerTest" time="0.045">
+    <error message="Cannot invoke &quot;com.nice.avishkar.OptimalTravelSchedule.getValue()&quot; because the return value of &quot;java.util.Map.get(Object)&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "com.nice.avishkar.OptimalTravelSchedule.getValue()" because the return value of "java.util.Map.get(Object)" is null
+	at com.nice.avishkar.TravelOptimizerTest.test1(TravelOptimizerTest.java:38)
+</error>
   </testcase>
-  <testcase name="test2" classname="com.nice.avishkar.TravelOptimizerTest" time="0.001">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at com.nice.avishkar.TravelOptimizerTest.test2(TravelOptimizerTest.java:60)
-</failure>
+  <testcase name="test2" classname="com.nice.avishkar.TravelOptimizerTest" time="0.013">
+    <error message="Cannot invoke &quot;com.nice.avishkar.OptimalTravelSchedule.getValue()&quot; because the return value of &quot;java.util.Map.get(Object)&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "com.nice.avishkar.OptimalTravelSchedule.getValue()" because the return value of "java.util.Map.get(Object)" is null
+	at com.nice.avishkar.TravelOptimizerTest.test2(TravelOptimizerTest.java:62)
+</error>
   </testcase>
-  <testcase name="test3" classname="com.nice.avishkar.TravelOptimizerTest" time="0.001">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at com.nice.avishkar.TravelOptimizerTest.test3(TravelOptimizerTest.java:90)
-</failure>
+  <testcase name="test3" classname="com.nice.avishkar.TravelOptimizerTest" time="0.015">
+    <error message="Cannot invoke &quot;com.nice.avishkar.OptimalTravelSchedule.getValue()&quot; because the return value of &quot;java.util.Map.get(Object)&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "com.nice.avishkar.OptimalTravelSchedule.getValue()" because the return value of "java.util.Map.get(Object)" is null
+	at com.nice.avishkar.TravelOptimizerTest.test3(TravelOptimizerTest.java:92)
+</error>
   </testcase>
-  <testcase name="test4" classname="com.nice.avishkar.TravelOptimizerTest" time="0.001">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at com.nice.avishkar.TravelOptimizerTest.test4(TravelOptimizerTest.java:119)
-</failure>
+  <testcase name="test4" classname="com.nice.avishkar.TravelOptimizerTest" time="0.033">
+    <error message="Cannot invoke &quot;com.nice.avishkar.OptimalTravelSchedule.getValue()&quot; because the return value of &quot;java.util.Map.get(Object)&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "com.nice.avishkar.OptimalTravelSchedule.getValue()" because the return value of "java.util.Map.get(Object)" is null
+	at com.nice.avishkar.TravelOptimizerTest.test4(TravelOptimizerTest.java:121)
+</error>
   </testcase>
-  <testcase name="test5" classname="com.nice.avishkar.TravelOptimizerTest" time="0.001">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at com.nice.avishkar.TravelOptimizerTest.test5(TravelOptimizerTest.java:142)
-</failure>
+  <testcase name="test5" classname="com.nice.avishkar.TravelOptimizerTest" time="0.067">
+    <error message="Cannot invoke &quot;com.nice.avishkar.OptimalTravelSchedule.getValue()&quot; because the return value of &quot;java.util.Map.get(Object)&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "com.nice.avishkar.OptimalTravelSchedule.getValue()" because the return value of "java.util.Map.get(Object)" is null
+	at com.nice.avishkar.TravelOptimizerTest.test5(TravelOptimizerTest.java:144)
+</error>
   </testcase>
-  <testcase name="test6" classname="com.nice.avishkar.TravelOptimizerTest" time="0.007">
-    <failure type="java.lang.AssertionError">java.lang.AssertionError
-	at com.nice.avishkar.TravelOptimizerTest.test6(TravelOptimizerTest.java:171)
-</failure>
+  <testcase name="test6" classname="com.nice.avishkar.TravelOptimizerTest" time="0.157">
+    <error message="Cannot invoke &quot;com.nice.avishkar.OptimalTravelSchedule.getRoutes()&quot; because the return value of &quot;java.util.Map.get(Object)&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "com.nice.avishkar.OptimalTravelSchedule.getRoutes()" because the return value of "java.util.Map.get(Object)" is null
+	at com.nice.avishkar.TravelOptimizerTest.test6(TravelOptimizerTest.java:173)
+</error>
   </testcase>
 </testsuite>
