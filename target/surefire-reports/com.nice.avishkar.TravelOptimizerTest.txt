@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.nice.avishkar.TravelOptimizerTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 6, Errors: 0, Skipped: 1, Time elapsed: 0.212 s <<< FAILURE! - in com.nice.avishkar.TravelOptimizerTest
+test1(com.nice.avishkar.TravelOptimizerTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.nice.avishkar.TravelOptimizerTest.test1(TravelOptimizerTest.java:36)
+
+test2(com.nice.avishkar.TravelOptimizerTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.nice.avishkar.TravelOptimizerTest.test2(TravelOptimizerTest.java:60)
+
+test3(com.nice.avishkar.TravelOptimizerTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.nice.avishkar.TravelOptimizerTest.test3(TravelOptimizerTest.java:90)
+
+test4(com.nice.avishkar.TravelOptimizerTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.nice.avishkar.TravelOptimizerTest.test4(TravelOptimizerTest.java:119)
+
+test5(com.nice.avishkar.TravelOptimizerTest)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.nice.avishkar.TravelOptimizerTest.test5(TravelOptimizerTest.java:142)
+
+test6(com.nice.avishkar.TravelOptimizerTest)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.nice.avishkar.TravelOptimizerTest.test6(TravelOptimizerTest.java:171)
+
