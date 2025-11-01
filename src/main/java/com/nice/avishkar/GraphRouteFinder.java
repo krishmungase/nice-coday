@@ -1,7 +1,11 @@
 package com.nice.avishkar;
 
-import java.util.*;
-
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.PriorityQueue;
 
 public final class GraphRouteFinder {
 
@@ -21,8 +25,12 @@ public final class GraphRouteFinder {
     }
 
     private static int costByCriteria(int time, int cost, int hops, String criteria) {
-        if ("time".equalsIgnoreCase(criteria)) return time;
-        if ("cost".equalsIgnoreCase(criteria)) return cost;
+        if ("time".equalsIgnoreCase(criteria)) {
+            return time;
+        }
+        if ("cost".equalsIgnoreCase(criteria)) {
+            return cost;
+        }
         return hops;
     }
 
@@ -52,19 +60,20 @@ public final class GraphRouteFinder {
                     routes.add(new Route(ts.getSource(), ts.getDestination(), ts.getMode(), ts.getDepartureTime(), ts.getArrivalTime()));
                 }
                 long value = ("time".equalsIgnoreCase(criteria)) ? cur.getTotalTime()
-                           : ("cost".equalsIgnoreCase(criteria)) ? cur.getTotalCost()
-                           : cur.getTotalHops();
+                        : ("cost".equalsIgnoreCase(criteria)) ? cur.getTotalCost()
+                        : cur.getTotalHops();
                 return new OptimalTravelSchedule(routes, criteria, value, "");
             }
 
-            // If we have seen a strictly better entry, skip
             Integer recorded = bestCost.get(cur.stateKey());
             if (recorded != null && recorded < costByCriteria(cur.getTotalTime(), cur.getTotalCost(), cur.getTotalHops(), criteria)) {
                 continue;
             }
 
             List<TravelSchedule> neigh = adjacency.get(cur.getLocation());
-            if (neigh == null) continue;
+            if (neigh == null) {
+                continue;
+            }
 
             for (TravelSchedule edge : neigh) {
                 String nextLoc = edge.getDestination();

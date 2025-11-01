@@ -1,28 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.nice.avishkar.TravelOptimizerTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 6, Skipped: 1, Time elapsed: 0.534 s <<< FAILURE! - in com.nice.avishkar.TravelOptimizerTest
-test1(com.nice.avishkar.TravelOptimizerTest)  Time elapsed: 0.045 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.nice.avishkar.OptimalTravelSchedule.getValue()" because the return value of "java.util.Map.get(Object)" is null
-	at com.nice.avishkar.TravelOptimizerTest.test1(TravelOptimizerTest.java:38)
-
-test2(com.nice.avishkar.TravelOptimizerTest)  Time elapsed: 0.013 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.nice.avishkar.OptimalTravelSchedule.getValue()" because the return value of "java.util.Map.get(Object)" is null
-	at com.nice.avishkar.TravelOptimizerTest.test2(TravelOptimizerTest.java:62)
-
-test3(com.nice.avishkar.TravelOptimizerTest)  Time elapsed: 0.015 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.nice.avishkar.OptimalTravelSchedule.getValue()" because the return value of "java.util.Map.get(Object)" is null
-	at com.nice.avishkar.TravelOptimizerTest.test3(TravelOptimizerTest.java:92)
-
-test4(com.nice.avishkar.TravelOptimizerTest)  Time elapsed: 0.033 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.nice.avishkar.OptimalTravelSchedule.getValue()" because the return value of "java.util.Map.get(Object)" is null
-	at com.nice.avishkar.TravelOptimizerTest.test4(TravelOptimizerTest.java:121)
-
-test5(com.nice.avishkar.TravelOptimizerTest)  Time elapsed: 0.067 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.nice.avishkar.OptimalTravelSchedule.getValue()" because the return value of "java.util.Map.get(Object)" is null
-	at com.nice.avishkar.TravelOptimizerTest.test5(TravelOptimizerTest.java:144)
-
-test6(com.nice.avishkar.TravelOptimizerTest)  Time elapsed: 0.157 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.nice.avishkar.OptimalTravelSchedule.getRoutes()" because the return value of "java.util.Map.get(Object)" is null
-	at com.nice.avishkar.TravelOptimizerTest.test6(TravelOptimizerTest.java:173)
-
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 268.751 s - in com.nice.avishkar.TravelOptimizerTest

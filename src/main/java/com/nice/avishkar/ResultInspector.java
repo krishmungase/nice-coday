@@ -3,13 +3,11 @@ package com.nice.avishkar;
 import java.util.List;
 import java.util.Map;
 
-/**
- * ResultInspector - simple utility for printing and validating results.
- * Keep this lightweight and focused on developer/debug output.
- */
 public final class ResultInspector {
 
-    private ResultInspector() {}
+    private ResultInspector() {
+        throw new AssertionError("Utility class should not be instantiated");
+    }
 
     public static void printResults(Map<String, OptimalTravelSchedule> results) {
         System.out.println("\n=== Travel Optimization Results ===\n");
@@ -47,8 +45,12 @@ public final class ResultInspector {
         }
         boolean criteriaMatch = s.getCriteria().equalsIgnoreCase(expectedCriteria);
         boolean valueMatch = s.getValue() == expectedValue;
-        if (!criteriaMatch) System.err.println("ERROR: Criteria mismatch. Expected: " + expectedCriteria + ", Got: " + s.getCriteria());
-        if (!valueMatch) System.err.println("ERROR: Value mismatch. Expected: " + expectedValue + ", Got: " + s.getValue());
+        if (!criteriaMatch) {
+            System.err.println("ERROR: Criteria mismatch. Expected: " + expectedCriteria + ", Got: " + s.getCriteria());
+        }
+        if (!valueMatch) {
+            System.err.println("ERROR: Value mismatch. Expected: " + expectedValue + ", Got: " + s.getValue());
+        }
         return criteriaMatch && valueMatch;
     }
 

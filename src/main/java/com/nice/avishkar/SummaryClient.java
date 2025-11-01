@@ -7,26 +7,20 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
-/**
- * SummaryClient - generates human-readable summaries for optimal travel schedules.
- * By default uses the internal summary generator for reliability.
- * API call code remains available but disabled by default.
- */
 public final class SummaryClient {
 
     private static final String HF_API_URL = "https://api-inference.huggingface.co/models/gpt2";
     private static final int TIMEOUT_MS = 8_000;
 
-    private SummaryClient() {}
+    private SummaryClient() {
+        throw new AssertionError("Utility class should not be instantiated");
+    }
 
     public static String generateTravelSummary(OptimalTravelSchedule schedule, TravelRequest request) {
-        // Prefer local deterministic summary
         String local = generateIntelligentSummary(schedule, request);
-        if (local != null && !local.isEmpty()) return local;
-
-        // Fallback to API if desired; currently disabled for reliability.
-        // return callHuggingFaceAPI(buildPrompt(schedule, request));
-
+        if (local != null && !local.isEmpty()) {
+            return local;
+        }
         return "No routes available";
     }
 
@@ -41,7 +35,7 @@ public final class SummaryClient {
 
         StringBuilder sb = new StringBuilder(140);
         sb.append("Optimal route from ").append(request.getSource())
-          .append(" to ").append(request.getDestination()).append(": ");
+                .append(" to ").append(request.getDestination()).append(": ");
 
         switch (criteria) {
             case "time": {
@@ -49,7 +43,9 @@ public final class SummaryClient {
                 long minutes = value % 60;
                 if (hours > 0) {
                     sb.append(hours).append("h");
-                    if (minutes > 0) sb.append(" ").append(minutes).append("m");
+                    if (minutes > 0) {
+                        sb.append(" ").append(minutes).append("m");
+                    }
                 } else {
                     sb.append(minutes).append("m");
                 }
@@ -60,23 +56,26 @@ public final class SummaryClient {
                 sb.append("Costs Rs ").append(value);
                 break;
             }
-            default: { // hops
+            default: {
                 sb.append("Requires ").append(value).append(" hop");
-                if (value != 1) sb.append("s");
+                if (value != 1) {
+                    sb.append("s");
+                }
                 break;
             }
         }
 
         if (segments > 1) {
             sb.append(", ").append(segments - 1).append(" connection");
-            if (segments - 1 != 1) sb.append("s");
+            if (segments - 1 != 1) {
+                sb.append("s");
+            }
         }
 
         sb.append(".");
         return sb.toString();
     }
 
-    // Example of an API call (kept for reference; needs token & robust parsing)
     @SuppressWarnings("unused")
     private static String callHuggingFaceAPI(String prompt) {
         try {
@@ -100,21 +99,26 @@ public final class SummaryClient {
                     try (BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8))) {
                         StringBuilder sb = new StringBuilder();
                         String line;
-                        while ((line = br.readLine()) != null) sb.append(line);
+                        while ((line = br.readLine()) != null) {
+                            sb.append(line);
+                        }
                         // naive extraction
                         String json = sb.toString();
                         int idx = json.indexOf("\"generated_text\":\"");
                         if (idx >= 0) {
                             int start = idx + 17;
                             int end = json.indexOf("\"", start);
-                            if (end > start) return json.substring(start, end);
+                            if (end > start) {
+                                return json.substring(start, end);
+                            }
                         }
                     }
                 }
             } finally {
                 conn.disconnect();
             }
-        } catch (Exception ignored) {}
+        } catch (Exception ignored) {
+        }
         return null;
     }
 }
