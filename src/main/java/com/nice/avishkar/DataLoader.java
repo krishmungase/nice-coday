@@ -17,7 +17,7 @@ public final class DataLoader {
     public static List<TravelSchedule> readSchedules(Path filePath) throws IOException {
         List<TravelSchedule> schedules = new ArrayList<>();
         try (BufferedReader br = Files.newBufferedReader(filePath)) {
-            String line = br.readLine(); // header
+            String line = br.readLine();
             while ((line = br.readLine()) != null) {
                 line = line.trim();
                 if (line.isEmpty()) {
@@ -51,7 +51,7 @@ public final class DataLoader {
     public static List<TravelRequest> readCustomerRequests(Path filePath) throws IOException {
         List<TravelRequest> requests = new ArrayList<>();
         try (BufferedReader br = Files.newBufferedReader(filePath)) {
-            String line = br.readLine(); // header
+            String line = br.readLine();
             while ((line = br.readLine()) != null) {
                 line = line.trim();
                 if (line.isEmpty()) {
